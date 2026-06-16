@@ -235,9 +235,8 @@ print(f"Zapisano zsynchronizowane dane do: {output_filename}")
 
 plt.figure(figsize=(12, 6))
 
-# Tutaj używamy t_imu i est_t osobno - tak jak chciałeś
 plt.plot(est_t, est_v, label='Vx GTSAM (Estymowana)', color='blue', linewidth=2)
-plt.plot(t_imu, v_imu, label='Vx GPS referencja)', 
+plt.plot(t_imu, v_imu, label='Vx GPS referencyjna)', 
          color='green', alpha=0.5, linestyle='--')
 
 plt.title('Porównanie prędkości estymowanej i referencyjnej')
